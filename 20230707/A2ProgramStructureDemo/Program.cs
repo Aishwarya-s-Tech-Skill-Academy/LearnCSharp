@@ -1,4 +1,4 @@
-﻿﻿Console.WriteLine("Hello .NET 8 World!");
+﻿Console.WriteLine("Hello .NET 8 World!");
 
 Console.WriteLine(Maths.AddNumbers(2, 4));
 

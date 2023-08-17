@@ -1,4 +1,4 @@
-﻿﻿/*
+﻿/*
     File: Program.cs
     Author: Viswanatha Swamy
     Created On: 7/7/2021 10:37:00 PM
@@ -20,10 +20,16 @@ namespace ProgramStructureDemo
         { /* Block of code Starts here */
 
             Console.WriteLine("Hello .NET 8 World!"); /* This is a statement and it ends with semi colon. */
-
-            // Maths maths = new Maths(); /* This is a statement and it ends with semi colon. */
-            // Console.WriteLine(maths.AddNumbers(2, 4));
-            Console.WriteLine(Maths.AddNumbers(2, 4));
+            
+            Console.WriteLine("Enter your name: ");
+            var name = Console.ReadLine();
+            Console.WriteLine($"Hello {name}!");
+            
+            Maths maths = new(); /* This is a statement and it ends with semi colon. */
+            Console.WriteLine(maths.AddNumbers(2, 4));
+            
+            Console.WriteLine(MathsV1.AddNumbers(2, 4));
+            Console.WriteLine(AddNumbers(2, 4));
 
             /* The dot operator (.) is used to access members of a namespace, type, or object. */
             Console.WriteLine("Press any key to exit.");
@@ -36,11 +42,18 @@ namespace ProgramStructureDemo
 
     public class Maths
     {
+        public int AddNumbers(int a, int b)
+        {
+            return a + b;
+        }
+    }
 
+    public class MathsV1
+    {
         public static int AddNumbers(int a, int b)
         {
             return a + b;
         }
-
     }
+
 }

@@ -1,5 +1,4 @@
-﻿// See https://aka.ms/new-console-template for more information
-using HeaderFooter;
+﻿using HeaderFooter;
 
 Header _header = new();
 Footer _footer = new();
